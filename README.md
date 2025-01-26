@@ -63,9 +63,3 @@ Se identificaron algunos puntos en los endpoints que podrían estar diseñados a
 - **Tailwind CSS**: Para estilos rápidos y modulares.
 - **JavaScript moderno**: Uso de ES6+ para mantener el código limpio y mantenible.
 - **PropTypes**: Validación de las propiedades de los componentes.
-
-## Cómo iniciar el proyecto
-
-1. Clonar el repositorio:
-   ```bash
-   git clone <url-del-repositorio>
