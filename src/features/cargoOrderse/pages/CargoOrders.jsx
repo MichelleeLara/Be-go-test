@@ -26,7 +26,7 @@ const CargoOrders = () => {
   };
 
   return (
-    <section className="py-12">
+    <section className="py-12 min-h-screen">
       <div className="mx-6 flex flex-col gap-6">
         {/* Header */}
         <div className="flex flex-col gap-6">
@@ -42,10 +42,10 @@ const CargoOrders = () => {
         <SearchEngine onSearch={handleSearch} />
 
         {/* Render Orders */}
-        <aside className="mt-5 flex flex-col gap-6 sm:grid md:gap-10 sm:grid-cols-2 lg:grid-cols-3">
+        <aside className="mt-5 flex relative flex-col gap-6 sm:grid md:gap-10 sm:grid-cols-2 md:grid-cols-3">
           {isSearching ? (
             <>
-              <h2 className="text-lg font-semibold">Search Results</h2>
+              <h2 className="text-lg font-semibold absolute top-[-2rem]">Search Results</h2>
               {filteredOrders.length > 0 ? (
                 filteredOrders.map((order) => (
                   <OrderCardContainer key={order.id} order={order} />

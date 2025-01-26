@@ -33,7 +33,7 @@ const CargoDetails = () => {
 
 
   return (
-    <section className="flex flex-col gap-6">
+    <section className="flex flex-col gap-6 min-h-screen">
       <div className="mx-6 pb-12 mt-5 flex flex-col gap-6">
         {/* Header */}
         <div className="flex flex-col gap-6">
