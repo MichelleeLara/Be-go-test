@@ -8,7 +8,7 @@ const SearchEngine = ({ onSearch }) => {
   };
 
   return (
-    <div className="flex items-center gap-3 border-b border-[#2C2C2C] pb-1.5">
+    <div className="flex items-center gap-3 border-b mt-2 border-[#2C2C2C] pb-1.5">
       <MagnifyingGlass />
       <input
         type="text"

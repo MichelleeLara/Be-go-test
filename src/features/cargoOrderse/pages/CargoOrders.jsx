@@ -42,7 +42,7 @@ const CargoOrders = () => {
         <SearchEngine onSearch={handleSearch} />
 
         {/* Render Orders */}
-        <aside className="mt-5 flex flex-col gap-6">
+        <aside className="mt-5 flex flex-col gap-6 sm:grid md:gap-10 sm:grid-cols-2 lg:grid-cols-3">
           {isSearching ? (
             <>
               <h2 className="text-lg font-semibold">Search Results</h2>
@@ -56,12 +56,10 @@ const CargoOrders = () => {
             </>
           ) : (
             <>
-              <h2 className="text-lg font-semibold">Current Orders</h2>
               {orders.map((order) => (
                 <OrderCardContainer key={order.id} order={order} />
               ))}
 
-              <h2 className="text-lg font-semibold">Upcoming Orders</h2>
               {ordersComing.map((order) => (
                 <OrderCardContainer key={order.id} order={order} />
               ))}

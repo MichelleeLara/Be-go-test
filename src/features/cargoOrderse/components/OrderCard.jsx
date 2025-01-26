@@ -48,7 +48,7 @@ const OrderCard = ({
       <p className="text-[#969798] text-sm font-semibold">
         Order <span className="text-white">#{orderNumber}</span>
       </p>
-      <div className="gradient-box rounded-2xl">
+      <div className="gradient-box rounded-2xl w-full md:max-w-full">
         {/* Header Order */}
         <header className="py-2.5 px-4 flex justify-between border-b border-[#2c2c2c] pb-4 font-semibold">
           <div className="flex items-center gap-2 text-sm">
